@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "cargo run (main)",
+      "type": "shell",
+      "command": "cargo run",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "cargo run --bin ex1",
+      "type": "shell",
+      "command": "cargo run --bin ex1",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "cargo run --bin ex2",
+      "type": "shell",
+      "command": "cargo run --bin ex2",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "cargo run --bin ex3",
+      "type": "shell",
+      "command": "cargo run --bin ex3",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "cargo run --bin ex4",
+      "type": "shell",
+      "command": "cargo run --bin ex4",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "cargo run --bin ex5",
+      "type": "shell",
+      "command": "cargo run --bin ex5",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" }
+    }
+  ]
+}

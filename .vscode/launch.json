@@ -1,0 +1,71 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Run main (default)",
+      "cargo": {
+        "args": ["build", "--bin=rust_course"],
+        "filter": { "name": "rust_course", "kind": "bin" }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Run ex1",
+      "cargo": {
+        "args": ["build", "--bin=ex1"],
+        "filter": { "name": "ex1", "kind": "bin" }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Run ex2",
+      "cargo": {
+        "args": ["build", "--bin=ex2"],
+        "filter": { "name": "ex2", "kind": "bin" }
+      },
+      "args": ["10", "+","20"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Run ex3",
+      "cargo": {
+        "args": ["build", "--bin=ex3"],
+        "filter": { "name": "ex3", "kind": "bin" }
+      },
+      "args": ["1","2","3","4","5","6"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Run ex4",
+      "cargo": {
+        "args": ["build", "--bin=ex4"],
+        "filter": { "name": "ex4", "kind": "bin" }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Run ex5",
+      "cargo": {
+        "args": ["build", "--bin=ex5"],
+        "filter": { "name": "ex5", "kind": "bin" }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
