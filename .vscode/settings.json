@@ -1,0 +1,11 @@
+{
+  // Ensure rust-analyzer is the Rust language server
+  "rust-analyzer.check.command": "cargo check",
+  "rust-analyzer.diagnostics.enable": true,
+  "rust-analyzer.inlayHints.enable": true,
+  // Ensure code actions (quick fixes) are available
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  }
+}
