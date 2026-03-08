@@ -49,6 +49,13 @@
       "command": "cargo run --bin ex6",
       "group": "build",
       "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "cargo run --bin ex7",
+      "type": "shell",
+      "command": "cargo run --bin ex7",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" }
     }
   ]
 }

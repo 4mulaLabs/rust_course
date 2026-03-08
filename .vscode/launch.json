@@ -77,6 +77,17 @@
       },
       "args": ["1","1","1","2","4","10","10","10","10","10"],
       "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Run ex7",
+      "cargo": {
+        "args": ["build", "--bin=ex7"],
+        "filter": { "name": "ex7", "kind": "bin" }
+      },
+      "args": ["1","1","1","2","4","10","10","10","10","10"],
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
