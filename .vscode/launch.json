@@ -126,6 +126,15 @@
       "program": "${workspaceFolder}/target/debug/ex_b6",
       "args": ["/Users/shlomy/projects/rust_course/src"],
       "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Run ex_b7",
+      "preLaunchTask": "Build ex_b7",
+      "program": "${workspaceFolder}/target/debug/ex_b7",
+      "args": ["./src","ex_b7.rs"],
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
