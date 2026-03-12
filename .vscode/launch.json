@@ -108,6 +108,15 @@
       "program": "${workspaceFolder}/target/debug/ex_b4",
       "args": ["src/resource/file.txt","line[1-2]"],
       "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Run ex_b5",
+      "preLaunchTask": "Build ex_b5",
+      "program": "${workspaceFolder}/target/debug/ex_b5",
+      "args": ["src/resource/file.txt","line[1-2]"],
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
