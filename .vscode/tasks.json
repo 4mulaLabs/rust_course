@@ -155,6 +155,13 @@
       "command": "cargo build --bin ex_b5",
       "group": "build",
       "problemMatcher": "$rustc"
+    },
+    {
+      "label": "Build ex_b6",
+      "type": "shell",
+      "command": "cargo build --bin ex_b6",
+      "group": "build",
+      "problemMatcher": "$rustc"
     }
   ]
 }
