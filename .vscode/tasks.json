@@ -2,60 +2,146 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Build main",
+      "type": "shell",
+      "command": "cargo build --bin rust_course",
+      "group": "build",
+      "problemMatcher": "$rustc"
+    },
+    {
       "label": "cargo run (main)",
       "type": "shell",
       "command": "cargo run",
       "group": { "kind": "build", "isDefault": true },
-      "presentation": { "reveal": "always", "panel": "shared" }
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": "$rustc"
     },
     {
-      "label": "cargo run --bin ex1",
+      "label": "Build ex_a1",
       "type": "shell",
-      "command": "cargo run --bin ex1",
+      "command": "cargo build --bin ex_a1",
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" }
+      "problemMatcher": "$rustc"
     },
     {
-      "label": "cargo run --bin ex2",
+      "label": "cargo run --bin ex_a1",
       "type": "shell",
-      "command": "cargo run --bin ex2",
+      "command": "cargo run --bin ex_a1",
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" }
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": "$rustc"
     },
     {
-      "label": "cargo run --bin ex3",
+      "label": "Build ex_a2",
       "type": "shell",
-      "command": "cargo run --bin ex3",
+      "command": "cargo build --bin ex_a2",
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" }
+      "problemMatcher": "$rustc"
     },
     {
-      "label": "cargo run --bin ex4",
+      "label": "cargo run --bin ex_a2",
       "type": "shell",
-      "command": "cargo run --bin ex4",
+      "command": "cargo run --bin ex_a2",
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" }
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": "$rustc"
     },
     {
-      "label": "cargo run --bin ex5",
+      "label": "Build ex_a3",
       "type": "shell",
-      "command": "cargo run --bin ex5",
+      "command": "cargo build --bin ex_a3",
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" }
+      "problemMatcher": "$rustc"
     },
     {
-      "label": "cargo run --bin ex6",
+      "label": "cargo run --bin ex_a3",
       "type": "shell",
-      "command": "cargo run --bin ex6",
+      "command": "cargo run --bin ex_a3",
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" }
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": "$rustc"
     },
     {
-      "label": "cargo run --bin ex7",
+      "label": "Build ex_a4",
       "type": "shell",
-      "command": "cargo run --bin ex7",
+      "command": "cargo build --bin ex_a4",
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" }
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "cargo run --bin ex_a4",
+      "type": "shell",
+      "command": "cargo run --bin ex_a4",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "Build ex_a5",
+      "type": "shell",
+      "command": "cargo build --bin ex_a5",
+      "group": "build",
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "cargo run --bin ex_a5",
+      "type": "shell",
+      "command": "cargo run --bin ex_a5",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "Build ex_a6",
+      "type": "shell",
+      "command": "cargo build --bin ex_a6",
+      "group": "build",
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "cargo run --bin ex_a6",
+      "type": "shell",
+      "command": "cargo run --bin ex_a6",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "Build ex_a7",
+      "type": "shell",
+      "command": "cargo build --bin ex_a7",
+      "group": "build",
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "cargo run --bin ex_a7",
+      "type": "shell",
+      "command": "cargo run --bin ex_a7",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "Build ex_b1",
+      "type": "shell",
+      "command": "cargo build --bin ex_b1",
+      "group": "build",
+      "problemMatcher": "$rustc"
+    },
+    {
+      "label": "Build ex_b2",
+      "type": "shell",
+      "command": "cargo build --bin ex_b2",
+      "group": "build",
+      "problemMatcher": "$rustc"
+    },
+    ,
+    {
+      "label": "Build ex_b3",
+      "type": "shell",
+      "command": "cargo build --bin ex_b3",
+      "group": "build",
+      "problemMatcher": "$rustc"
     }
   ]
 }
