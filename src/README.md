@@ -144,3 +144,61 @@ Write a program the outputs the listing of the directory provided in the command
 Write a program that receives a name of a file and a directory. The program should traverse the directory recursively and print any path in which the given file name was found (the file's full path should be printed)
 
 Hint: use the example in `std::fs::read_dir`'s docs
+
+# Summary 2
+
+Write a function receiving a 2-dimensional list of numbers, *where some numbers can be missing*. You can assume all rows have same length, and all columns have the same length. Your program should append another cell at the "end" of each row and column, summarizing that row or column (i.e. a "totals" column and a "totals" row). Any row or column containing "missing values", should be summarized as a "missing sum" as well.
+
+# NumExt
+
+Implement a trait that adds functionality to numbers - `NumExt`. 
+It should support:
+
+* `fn round_up_to(&self, multiplier: Self)` - rounds the number up to the nearest multiple of `multiplier`
+* `fn round_down_to(&self, multiplier: Self)` - rounds the number up to the nearest multiple of `multiplier`
+* `fn dollars(&self) -> String` formats the number as a human-readable currency figure (e.g. `100007` -> `$100K` - be creative :-)
+
+Implement the trait for `i32` and for `f32`, and test it!
+
+# Notifier
+
+Implmement a struct called "Notifier", allowing us to simulate sending notifications to the console
+
+  * Notifier has a `pub fn notify(msg)` that allows outputting messages to the console
+  * Messages can be:
+    * Plain strings (in this case they will be printed)
+    * a tuple of an action description and a result - `(String, anyhow::Result<()>)`, describing an action that took place and its result. The notifier will print the action and the outcome of the action. (Optionally you can avoid printing anything if the result is successful)
+
+# Stringops
+
+Implement a trait that represents a string transformation. It supports two methods:
+
+* `fn transform(&self, s: &mut String)`
+* `fn undo(&self, s: &mut String)`
+
+Where `undo` reverses the transformation on a string.
+
+Implement the following operations using the trait:
+* Reverse a string
+* Swap every pair of characters (`john` -> `ojnh`)
+* Add a specific increment to each character's unicode code point
+  * Note that the result is not necessarily valid, in which case feel free to `panic!`
+* Encode a string as RLE
+
+
+Write a function that tests the `transform` and `redo` relationships, by receiving a series of transforms, and making sure performing all transforms in order followed by undos in reverse order yields the original string.
+
+# Serialize
+
+Implement a "Serialize" trait that converts an object to a vector of bytes. Implement it for `String` and for `Vec<u8>`
+
+# Deserialize
+
+Implement a trait, Deserialize, which is the opposite of Serialize - i.e. receives a slice of bytes and constructs a value that supports `Deserialize` from it (it might also fail!). Write a helper function that deserializes a bunch of bytes based on that trait
+
+Hint: the helper function should look like this:
+```rust
+fn deserialize<D: Deserialize>(bytes: &[u8]) -> Result<D> {
+  //...
+}
+```

@@ -135,6 +135,15 @@
       "program": "${workspaceFolder}/target/debug/ex_b7",
       "args": ["./src","ex_b7.rs"],
       "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Run ex_b8",
+      "preLaunchTask": "Build ex_b8",
+      "program": "${workspaceFolder}/target/debug/ex_b8",
+      "args": ["./src","ex_b8.rs"],
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
